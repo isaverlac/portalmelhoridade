@@ -1,0 +1,302 @@
+/**
+	
+@author Isabela Andrade
+color base: #87C644 (dark green), #4BB748 (green), #C49E2F (yellow)
+**/
+
+body {
+	color:#696969;
+	font-family:calibri;
+	background:#fff;
+}
+
+/*** SCROLLBAR ***/
+
+	::-webkit-scrollbar {width:10px; height:10px; overflow-x: hidden }
+    ::-webkit-scrollbar-thumb:vertical {height:10px; background-color:#C49E2F; opacity:.5; } 
+    ::-webkit-scrollbar-thumb:horizontal {overflow-x: hidden }
+	
+/* LINKS EM GERAL */
+	
+a {
+text-decoration:none;
+transition:0.5s ease-in; 
+-moz-transition:0.5s ease-in; 
+-webkit-transition:0.5s ease-in; 
+}
+
+/* HEADLINGS */
+
+h1 {
+	color:#87C644;
+	font-family: 'Sacramento', cursive;
+	margin-top:50px;
+}
+
+h2 {	
+	color:#696969;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size:20px;
+	}
+	
+h3 {
+	color:#87C644;
+	font-family: 'Open Sans Condensed', sans-serif;
+}	
+
+header {
+	top:0;
+	left:0;
+	width:100%;
+	height:200px;
+	position:absolute;
+}
+
+
+top {
+    background:#C49E2F;
+    padding:20px;
+    width:35px;
+    height:35px;
+	z-index:1000;
+    border-radius:100%;
+    text-align:center;
+    vertical-align:middle;
+    position:fixed;
+    left:15px;
+    bottom:2px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family:'calibri';
+    opacity:0;
+}
+
+ top a {
+     color:#fff;
+ }
+
+.top-show {
+    opacity:1;
+}
+
+.faixinha {
+	top:0;
+	left:0;
+	width:100%;
+	height:200px;
+	position:absolute;
+	background-image: url('Imagens/faixinha.png');
+	background-position: right top;
+	background-repeat:repeat-x;
+	background-size: auto auto;
+}
+
+.logo {
+	float:left;
+	width:30%;
+	height:200px;
+	margin-top:50px;
+	background-image: url('Imagens/logoExtenso.png');
+	background-position: center top;
+	background-repeat:no-repeat;
+	background-size: auto 150px;
+}
+
+.logo a {
+	width:80%;
+	height:200px;
+	display:block;
+	position:relative;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+	position: fixed;
+    width: 100%;
+	background:#fff;
+	height:auto;
+	line-height:50px;
+	margin:auto;
+	text-align:center;
+}
+
+nav {
+	float:right;
+	width:70%;
+	height:200px;
+	margin-top:120px;
+	position:relative;
+}
+
+	nav a {
+			color:#87C644;
+			text-transform:uppercase;
+			text-align:center;
+			width:auto;	
+			margin: 0 30px 0 30px;
+			padding:5px;
+			font-weight:bold;
+	}
+
+	nav a:hover {
+		color:#C49E2F;
+		border-bottom:5px #4BB748 solid;
+	}
+
+.caixas {
+	position:absolute;
+	top:238px;
+	left:0;
+	width:100%;
+}
+
+.caixa {
+	width:100%;
+	height:auto;
+	position:relative;
+	padding:15px;
+	margin:5px;
+	left:0;
+	background:#f1f1f1;
+	text-align:center;
+	margin:auto;
+}
+
+.caixa2 {
+	width:100%;
+	height:auto;
+	position:relative;
+	padding:15px;
+	margin:5px;
+	left:0;
+	background:#fff;
+	text-align:center;
+	margin:auto;
+}
+
+.tituloCaixa {
+	font-size:24px;
+	color:#87C644;
+	font-family: 'Squada One', cursive;
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+	padding:10px;
+	margin:10px;
+}
+
+.caixa a {
+	color:#FFA99F;
+}
+
+.caixa a:hover {
+	color:#696969;
+}
+
+.postsRecentes{
+	
+	display:inline-block;
+	width:250px;
+	height:250px;
+	background:white;
+	margin:5px;
+}
+
+	.postsRecentes img {
+		width:250px;
+		height:250px;
+		transition:0.5s ease-in; 
+		-moz-transition:0.5s ease-in; 
+		-webkit-transition:0.5s ease-in; 
+	}
+	
+	.postsRecentes img:hover {
+		opacity:.5;
+	}
+
+.tituloPostsRecentes {
+	background:#87C644;
+	color:#fff;
+	width:250px;
+	height:60px;
+	overflow:auto;
+	padding:2px 0px 2px 0px;
+	font-size:20px;
+}
+
+.formEmail {
+	width:50%;
+	height:200px;
+	position:relative;
+
+}
+
+input[type="email"]{
+	background:#eee;
+	width:60%;
+	height:30px;
+	padding:5px;
+}
+
+button {
+	background:#87C644;
+	padding:5px;
+	width:20%;
+	color:#fff;
+	font-family: 'Jura', sans-serif;
+	font-weight:bold;
+	border-radius:50px;
+	border-top:none;
+	border-left:none;
+}
+
+.cadastreSuaEmpresa {
+	width:50%;
+	height:200px;
+	position:relative;
+	float:right;
+	margin-top:-200px;
+}
+
+	.cadastreSuaEmpresa img {
+	transition:0.5s ease-in; 
+	-moz-transition:0.5s ease-in; 
+	-webkit-transition:0.5s ease-in; 
+	}
+
+	.cadastreSuaEmpresa img:hover {
+			opacity:.5;
+	}
+
+.redesSociais img {
+		width:100px;
+		height:100px;
+	transition:0.5s ease-in; 
+	-moz-transition:0.5s ease-in; 
+	-webkit-transition:0.5s ease-in; 
+}
+
+	.redesSociais img:hover {
+			opacity:.5;
+	}
+	
+footer {
+	width: 100%;
+    height: auto;
+    position: absolute;
+    padding: 5px;
+    left: 0;
+    background: #87C644;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+
+	}
+	
+/* SELECAO COLORIDA  */
+
+::selection {
+	color:#ffffff; 
+	background:#87C644
+}; 

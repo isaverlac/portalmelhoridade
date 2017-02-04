@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<title>Portal Melhor Idade</title>
+	
+	<link rel="shortcut icon" href="Imagens/favicon.png">
+	<link rel="stylesheet" media="screen" href="style.css?v=8may2013">
+	<link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Isabela Andrade">
+	<meta name="robots" content="all">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+
+		  // Store hash
+		  var hash = this.hash;
+
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
+	
+	
+	<script>
+	function msg() {
+		alert("Encomenda Realizada!");
+	}
+	</script>
+	
+	
+	<script>
+			$(document).ready(function() {
+  
+			  $(window).scroll(function () {
+				  //if you hard code, then use console
+				  //.log to determine when you want the 
+				  //nav bar to stick.  
+				  console.log($(window).scrollTop())
+				if ($(window).scrollTop() > 110) {
+				  $('nav').addClass('navbar-fixed');
+				   $('top').addClass('top-show');
+				}
+				if ($(window).scrollTop() < 111) {
+				  $('nav').removeClass('navbar-fixed');
+				  $('top').removeClass('top-show');
+				}
+			  });
+			});
+	</script>
+
+</head>
+
+<body>
+
+<top>
+	<a href="#inicio" style="color:#fff">back to the top</a>
+</top>
+
+<header>
+
+	<div class="faixinha">
+	<span id="inicio"></span>
+	</div>
+	
+	<div class="logo">
+		<a href="/"></a>
+	</div>
+	
+	<div id="sticky-anchor"></div>
+	<nav>
+		<a href="#">Sobre</a>
+		<a href="#">Guia de Empresas</a>
+		<a href="#">Blog</a>
+		<a href="#">Cadastro de Empresas</a>
+		<a href="#">Contato</a>
+	</nav>
+
+</header>
+
+
+<div class="caixas">
+
+	<div class="caixa">
+
+		<div class="tituloCaixa">Posts Recentes</div>
+		
+		<div class="postsRecentes"> 
+			
+			<a href="#"><img src="Imagens/post1.jpg"/>
+			
+			<div class="tituloPostsRecentes">Dicas para Pesquisar Remédios</div></a>
+		</div>
+		
+		<div class="postsRecentes"> 
+			
+			<a href="#"><img src="Imagens/post2.jpg"/>
+			
+			<div class="tituloPostsRecentes">10 Dicas para controlar a Pressão Alta</div></a>
+		</div>
+		
+		<div class="postsRecentes"> 
+			
+			<a href="#"><img src="Imagens/post3.jpg"/>
+			
+			<div class="tituloPostsRecentes">Que tal falarmos sobre Hipertensão?</div></a>
+		</div>
+		
+	</div>
+	
+	<div class="caixa2">
+
+		<div class="tituloCaixa">Receba as Novidades</div>
+		
+		<div class="formEmail">
+			
+			<p>Assine nossa newsletter e receba novidades diretamente no seu email.</p>
+		
+		<form>
+			<input type="email" id="email" placeholder="Insira seu melhor e-mail">
+			
+			<p style="font-size:10px; font-style:italic"> Sua privacidade é muito importante para nós. Seu email estará seguro. </p>
+			<button type="submit" value="Assinar">Assinar</button>
+			
+		</form>
+		
+		</div>
+		
+		<div class="cadastreSuaEmpresa">
+			<a href="#"><img src="Imagens/CadastreSuaEmpresa.png" /></a>
+		</div>
+		
+		
+	</div>
+	
+	<div class="caixa">
+
+		<div class="tituloCaixa">Parceiros e Anunciantes</div>
+		
+		<div class="postsRecentes"> 
+			
+			<a href="#"><img src="Imagens/parceiros.png"/>
+			
+		</div>
+		
+		<div class="postsRecentes"> 
+			
+			<a href="#"><img src="Imagens/anunciantes.png"/>
+			
+		</div>
+		
+	</div>
+	
+	<div class="caixa2">
+
+		<div class="tituloCaixa">Vem com a gente!</div>
+		
+		<div class="redesSociais">
+			<a href="https://www.facebook.com/portalmelhoridade/"><img src="Imagens/facebook.png"/></a>
+			<a href="https://www.instagram.com/portalmelhoridade/"><img src="Imagens/instagram.png"/></a>
+		</div>
+		
+	</div>
+	
+	<footer>
+		<p>Portal Melhor Idade 2017 - Todos os direitos reservados <br>
+		Design por Isabela Andrade | Inspiração em Roberta Rezende </p>
+	</footer>
+
+</div>
+
+</body>
+</html>
