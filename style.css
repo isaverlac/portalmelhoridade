@@ -133,6 +133,7 @@ nav {
 			color:#87C644;
 			text-transform:uppercase;
 			text-align:center;
+			
 			width:auto;	
 			margin: 0 30px 0 30px;
 			padding:5px;
@@ -143,6 +144,79 @@ nav {
 		color:#C49E2F;
 		border-bottom:5px #4BB748 solid;
 	}
+	
+	
+.barraLateral {
+	width:21%;
+	height:100%;
+	position:absolute;
+	z-index:99;
+	margin:5px;
+	padding:15px;
+	right:0;
+	background:#e8e8e8;
+	text-align:center;
+}
+
+div#qTip {
+	color:#87C644; 
+	padding: 5px;
+	display: none; 
+	background:#f1f1f1; 
+	font-weight: bold; 
+	text-transform:uppercase; 
+	position: absolute; 
+	z-index: 1000;
+}
+
+.patrocinio img {
+	width:100px;
+	height:100px;
+	border-radius:100%;
+	margin:5px;
+}
+
+
+search {
+	float:right; 
+	height: 30px; 
+	margin:10px 0 0 0; 
+}
+#search input.field {
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	background-position:top right; 
+	background-repeat:no-repeat; 
+	width: 60%; 
+	padding:7px; 
+	outline: none; 
+	font-size: 13px; 
+	border: none; 
+	z-index: 1; 
+	height:16px; 
+	float:left; 
+	padding-right:30px;
+}	
+#search input.field:focus {
+	background-position:top right; 
+	background-repeat:no-repeat;
+	}
+#search input.submit {
+	width:26%; 
+	height:30px; 
+	font-weight:bold; 
+	float:left; 
+	border:none; 
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	cursor:pointer; 
+	margin:0 0 0 1px;
+	background-color:#87C644; 
+	color: #FFF;
+	}
+#search input.field {
+	background-color:#f1f1f1; 
+	color: #C49E2F;
+}	
 
 .caixas {
 	position:absolute;
@@ -152,19 +226,19 @@ nav {
 }
 
 .caixa {
-	width:100%;
+	width:72%;
 	height:auto;
 	position:relative;
 	padding:15px;
 	margin:5px;
 	left:0;
-	background:#f1f1f1;
+	background:#e8e8e8;
 	text-align:center;
-	margin:auto;
+	
 }
 
 .caixa2 {
-	width:100%;
+	width:75%;
 	height:auto;
 	position:relative;
 	padding:15px;
@@ -172,7 +246,7 @@ nav {
 	left:0;
 	background:#fff;
 	text-align:center;
-	margin:auto;
+	
 }
 
 .tituloCaixa {
@@ -218,11 +292,12 @@ nav {
 .tituloPostsRecentes {
 	background:#87C644;
 	color:#fff;
-	width:250px;
+	width:246px;
 	height:60px;
 	overflow:auto;
-	padding:2px 0px 2px 0px;
+	padding:2px;
 	font-size:20px;
+
 }
 
 .formEmail {
@@ -287,6 +362,7 @@ footer {
     position: absolute;
     padding: 5px;
     left: 0;
+	z-index:100;
     background: #87C644;
     color: #ffffff;
     padding: 5px;
