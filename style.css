@@ -33,10 +33,16 @@ h1 {
 	margin-top:50px;
 }
 
-h2 {	
-	color:#696969;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size:20px;
+h2 {
+	font-family:'Great Vibes', cursive; 
+	font-size:30px; 
+	text-transform:none;  
+	text-align:left; 
+	font-weight:normal;
+	border-bottom: 1px #C49E2F dashed;
+	color:#C49E2F;
+	text-indent:30px;
+	line-height:20px;  
 	}
 	
 h3 {
@@ -154,7 +160,7 @@ nav {
 	margin:5px;
 	padding:15px;
 	right:0;
-	background:#e8e8e8;
+	border-left:1px #C49E2F dashed;
 	text-align:center;
 }
 
@@ -163,10 +169,13 @@ div#qTip {
 	padding: 5px;
 	display: none; 
 	background:#f1f1f1; 
-	font-weight: bold; 
-	text-transform:uppercase; 
 	position: absolute; 
 	z-index: 1000;
+	font-family:'Great Vibes', cursive; 
+	text-transform:none;  
+	text-align:left; 
+	font-size:25px;
+	line-height:20px;  
 }
 
 .patrocinio img {
@@ -223,6 +232,22 @@ search {
 	top:238px;
 	left:0;
 	width:100%;
+}
+
+.sobre {
+	width:72%;
+	height:auto;
+	position:relative;
+	padding:15px;
+	margin:5px;
+	left:0;
+	background:#e8e8e8;
+	text-align:justify;
+	
+}
+
+form {
+	text-align:center;
 }
 
 .caixa {
@@ -307,11 +332,19 @@ search {
 
 }
 
-input[type="email"]{
+label {
+	width:200px;
+	text-align:center;
+	display: inline-block;
+	color:#696969;
+}
+
+input,select{
 	background:#eee;
 	width:60%;
 	height:30px;
 	padding:5px;
+	color:#a9a9a9;
 }
 
 button {

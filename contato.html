@@ -94,6 +94,8 @@
 </header>
 
 
+
+
 <div class="caixas">
 
 	<div class="barraLateral">
@@ -124,74 +126,61 @@
 	 
 </div>
 
-	<div class="caixa">
+	<div class="sobre">
 
-		<div class="tituloCaixa">Posts Recentes</div>
+		<div class="tituloCaixa">Contato</div>
 		
-		<div class="postsRecentes"> 
-			
-			<a href="#"><img src="Imagens/post1.jpg"/>
-			
-			<div class="tituloPostsRecentes">Dicas para Pesquisar Remédios</div></a>
-		</div>
+
+		<h2>Fale com a gente!</h2>
 		
-		<div class="postsRecentes"> 
-			
-			<a href="#"><img src="Imagens/post2.jpg"/>
-			
-			<div class="tituloPostsRecentes">10 Dicas para controlar a Pressão Alta</div></a>
-		</div>
+		Caso queira entrar em contato diretamente, nosso e-mail é: <strong>email@email.com.br</strong>
 		
-		<div class="postsRecentes"> 
-			
-			<a href="#"><img src="Imagens/post3.jpg"/>
-			
-			<div class="tituloPostsRecentes">Que tal falarmos sobre Hipertensão?</div></a>
-		</div>
+		<br>
 		
-	</div>
+		Ou se preferir, pode também entrar em contato pelo nosso:
+		Skype: -
+		WhatsApp: -
+		
 	
-	<div class="caixa2">
-
-		<div class="tituloCaixa">Receba as Novidades</div>
-		
-		<div class="formEmail">
-			
-			<p>Assine nossa newsletter e receba novidades diretamente no seu email.</p>
+		<h2>Preencha o formulário</h2>
 		
 		<form>
-			<input type="email" id="email" placeholder="Insira seu melhor e-mail">
+  
+			<label for="email">Email:</label>
+			<input type="email" id="email" placeholder="name@name.com.br">
 			
-			<p style="font-size:10px; font-style:italic"> Sua privacidade é muito importante para nós. Seu email estará seguro. </p>
-			<button type="submit" value="Assinar">Assinar</button>
+			<br><br>
 			
+			<label for="nome">Nome Completo:</label> 
+			<input type="text" maxlength="150" id="nome" required placeholder="Firstname Middlename Lastname"> 
+			
+			<br><br>
+			
+			
+			<label for="tel">Telefone:</label>
+			<input type="tel" id="tel" required placeholder="(99) 9999-9999" pattern="[(]?[0]?[0-9]{2}[)]?[ ]?[0-9]{4,5}[ -.]?[0-9]{4}">
+			
+			<br><br>
+			
+			<label for="city">Cidade:</label>
+			<select id="city">
+			  <option value="selecione">Selecione</option>
+			  <option value="cg">Campo Grande</option>
+			</select>
+			
+			<br><br>
+			
+			<label for="desc">Mensagem:</label>
+			<input type="text" id="desc" maxlength="500" required>
+			
+			<br><br>
+			
+			<button type="submit" value="Cadastrar">Cadastrar</button>
+		   
+			<button type="reset">Resetar</button>
+		  
 		</form>
-		
-		</div>
-		
-		<div class="cadastreSuaEmpresa">
-			<a href="#"><img src="Imagens/CadastreSuaEmpresa.png" /></a>
-		</div>
-		
-		
-	</div>
-	
-	<div class="caixa">
 
-		<div class="tituloCaixa">Parceiros e Anunciantes</div>
-		
-		<div class="postsRecentes"> 
-			
-			<a href="#"><img src="Imagens/parceiros.png"/>
-			
-		</div>
-		
-		<div class="postsRecentes"> 
-			
-			<a href="#"><img src="Imagens/anunciantes.png"/>
-			
-		</div>
-		
 	</div>
 	
 	<div class="caixa2">
